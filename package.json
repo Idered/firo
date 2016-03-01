@@ -1,0 +1,36 @@
+{
+  "name": "firo",
+  "version": "0.1.0",
+  "homepage": "https://github.com/idered/firo",
+  "description": "SCSS framework to manage RWD fluently.",
+  "main": "firo.scss",
+  "license": "MIT",
+  "author": "Kasper Mikiewicz <iam@kasper.io>",
+  "keywords": [
+    "css",
+    "sass",
+    "responsive",
+    "framework",
+    "firo",
+    "rwd"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idered/firo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/idered/firo/issues"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "node-sass": "^3.4.2",
+    "postcss-cli": "^2.5.1",
+    "rimraf": "^2.5.2"
+  },
+  "scripts": {
+    "autoprefix": "postcss css/style.css --use autoprefixer --output css/style.css",
+    "build": "rimraf css && npm run build-scss && npm run autoprefix",
+    "build-scss": "node-sass --output-style compact --source-map true --output css/ style.scss --outFile style.css",
+    "start": "npm run build-scss -- --watch"
+  }
+}

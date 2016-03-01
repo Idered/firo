@@ -1,0 +1,18 @@
+{
+  "name": "firo",
+  "version": "0.1.0",
+  "homepage": "https://github.com/idered/firo",
+  "description": "SCSS framework to manage RWD fluently.",
+  "main": "firo.scss",
+  "license": "MIT",
+  "authors": [
+    "Kasper Mikiewicz <iam@kasper.io>"
+  ],
+  "keywords": [
+    "firo",
+    "rwd",
+    "oocss",
+    "css"
+  ],
+  "dependencies": {}
+}
